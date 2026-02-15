@@ -1396,18 +1396,58 @@ section {
   vertical-align: middle;
 }
 
-/* About section with side-by-side layout */
-.about-grid {
+/* About section — alternating story blocks */
+.story-block {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: var(--sp-3xl);
   align-items: center;
+  margin-bottom: var(--sp-3xl);
+}
+
+.story-block:last-child {
+  margin-bottom: 0;
+}
+
+.story-block--reverse {
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.story-block--reverse .story-block__media {
+  order: 2;
+}
+
+.story-block--reverse .story-block__text {
+  order: 1;
+}
+
+.story-block__text p {
+  margin-bottom: var(--sp-md);
+  line-height: 1.75;
+}
+
+.story-block__heading {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: var(--sp-lg);
+  margin-bottom: var(--sp-md);
 }
 
 @media (max-width: 768px) {
-  .about-grid {
+  .story-block,
+  .story-block--reverse {
     grid-template-columns: 1fr;
     gap: var(--sp-xl);
+  }
+
+  .story-block--reverse .story-block__media {
+    order: 0;
+  }
+
+  .story-block--reverse .story-block__text {
+    order: 0;
   }
 }
 
