@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" width="360" height="80">
+  <!-- GT Officials — Full wordmark logo -->
+  <!-- Navy + gray, modern geometric sans-serif style -->
+
+  <!-- "GT" letters — bold, navy -->
+  <text x="0" y="58" font-family="'Sora', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="64" fill="#0C2340" letter-spacing="-2">GT</text>
+
+  <!-- Divider line — gold accent -->
+  <rect x="108" y="14" width="3" height="48" rx="1.5" fill="#C19A49"/>
+
+  <!-- "Officials" — lighter weight, dark gray -->
+  <text x="122" y="50" font-family="'Sora', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="38" fill="#3A4A5C" letter-spacing="1">Officials</text>
+
+  <!-- Subtle underline accent -->
+  <rect x="0" y="72" width="85" height="3" rx="1.5" fill="#C19A49"/>
+</svg>
